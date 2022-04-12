@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace Day35AddressBookLinq
+namespace AddressBookLinq
 {
     internal class Program
     {
