@@ -197,6 +197,35 @@ namespace Day35AddressBookLinq
                 Console.WriteLine("\n{0},{1}", row[0], row[7]);
             }
         }
+        //UC 10 Count by Type
+        public void CountFamilyOrFriend(DataTable addressBook)
+        {
+            Console.WriteLine("\n Enter Friend to Search and Retrieve Records");
+            string friend = Console.ReadLine();
+            foreach (DataRow row in addressBook.Rows)
+            {
+                if (Convert.ToString(row["RelationType"]) == friend)
+                {
+                    numberOfRecordsCity = addressBook.AsEnumerable().Where(x => x["RelationType"].ToString() == friend).ToList().Count;
+
+                }
+
+            }
+            Console.WriteLine(numberOfRecordsCity);
+            Console.WriteLine("\n Enter Family or Family,Friend to Search and Retrieve Records");
+            string family = Console.ReadLine();
+            foreach (DataRow row in addressBook.Rows)
+            {
+                if (Convert.ToString(row["RelationType"]) == family)
+                {
+                    numberOfRecordsState = addressBook.AsEnumerable().Where(x => x["RelationType"].ToString() == family).ToList().Count;
+
+                }
+
+            }
+            Console.WriteLine(numberOfRecordsState);
+        }
     }
 }
+
    

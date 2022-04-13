@@ -41,8 +41,10 @@ namespace Day35AddressBookLinq
             //adb.NamesAlpabeticallybyGivenCityandState(addressBook);
 
             //UC 9 add RelationType Column and Print Name and RealtionType
-            adb.FamilyandFriend(addressBook);
+            //adb.FamilyandFriend(addressBook);
+
+            //Uc 10 Count based in Relation Type
+            adb.CountFamilyOrFriend(addressBook);
         }
     }
-
 }
