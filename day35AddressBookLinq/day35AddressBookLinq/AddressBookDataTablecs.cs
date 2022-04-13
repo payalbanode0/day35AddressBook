@@ -86,5 +86,42 @@ namespace Day35AddressBookLinq
             Console.WriteLine("\nDisplay AddressBook After Changes");
             Display(addressBook);
         }
+        //Uc 6 Retrieve Based on City or State
+        public void RetievebyCity(DataTable addressBook)
+        {
+            Console.WriteLine("\n Enter City to Search and Retrieve Records");
+            string city = Console.ReadLine();
+            foreach (DataRow row in addressBook.Rows)
+            {
+                if (Convert.ToString(row["City"]) == city)
+                {
+                    string fname = row["FirstName"].ToString();
+                    string lname = row["LastName"].ToString();
+                    string address = row["Address"].ToString();
+                    string city1 = row["City"].ToString();
+                    string state = row["State"].ToString();
+                    string phno = row["PhoneNumber"].ToString();
+                    string email = row["Email"].ToString();
+                    Console.WriteLine("person in " + city + " this city are : \n" + "First Name : " + fname + ", Last Name : " + lname + ", Address : " + address + ", City : " + city1 + ", State : " + state + ", PhoneNumeber : " + phno + ", Email : " + email);
+                }
+            }
+            Console.WriteLine("\n Enter State to Search and Retrieve REcords");
+            string state1 = Console.ReadLine();
+            foreach (DataRow row1 in addressBook.Rows)
+            {
+                if (Convert.ToString(row1["State"]) == state1)
+                {
+                    string fname1 = row1["FirstName"].ToString();
+                    string lname1 = row1["LastName"].ToString();
+                    string address1 = row1["Address"].ToString();
+                    string city1 = row1["City"].ToString();
+                    string state2 = row1["State"].ToString();
+                    string phno1 = row1["PhoneNumber"].ToString();
+                    string email1 = row1["Email"].ToString();
+                    Console.WriteLine("person in " + state1 + " this State are : \n" + "First Name : " + fname1 + ", Last Name : " + lname1 + ", Address : " + address1 + ", City : " + city1 + ", State : " + state2 + ", PhoneNumeber : " + phno1 + ", Email : " + email1);
+                }
+            }
+        }
     }
 }
+    
