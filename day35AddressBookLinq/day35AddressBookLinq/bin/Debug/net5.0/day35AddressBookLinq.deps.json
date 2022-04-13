@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "day35AddressBookLinq/1.0.0": {
+        "runtime": {
+          "day35AddressBookLinq.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "day35AddressBookLinq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.exe
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.deps.json
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.runtimeconfig.json
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.dll
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\bin\Debug\net5.0\day35AddressBookLinq.pdb
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.dll
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\refint\day35AddressBookLinq.dll
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.pdb
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\day35AddressBookLinq.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\day35AddressLinq\AddressBookLinq\day35AddressBookLinq\day35AddressBookLinq\obj\Debug\net5.0\ref\day35AddressBookLinq.dll
