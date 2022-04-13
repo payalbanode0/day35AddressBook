@@ -33,10 +33,11 @@ namespace Day35AddressBookLinq
             //Uc 6 Retrieve based on City or State
             //adb.RetievebyCity(addressBook);
 
-            //Uc 7
-            adb.CountCityOrState(addressBook);
+            //Uc 7 Count based on City or State
+            //adb.CountCityOrState(addressBook);
 
-
+            //UC 8 Retrieve Records of Searched City and State in Ascending order of FirstName
+            adb.NamesAlpabeticallybyGivenCityandState(addressBook);
         }
     }
 }

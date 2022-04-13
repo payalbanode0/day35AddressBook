@@ -154,5 +154,40 @@ namespace Day35AddressBookLinq
 
 
         }
+        //UC 8 Retrieve Records of Searched City and State in Ascending order of FirstName
+        public void NamesAlpabeticallybyGivenCityandState(DataTable addressBook)
+        {
+
+
+            var Rows = from row in addressBook.AsEnumerable() orderby row["FirstName"] ascending select row;
+            DataTable addressBook1 = Rows.AsDataView().ToTable();
+            PrintCity(addressBook1);
+            PrintState(addressBook1);
+        }
+        public void PrintCity(DataTable addressBook1)
+        {
+            Console.WriteLine("\nEnter City to Be Searched and Retrieve Rcords by Aplabetical Order of First Name");
+            string city = Console.ReadLine();
+            foreach (DataRow row in addressBook1.Rows)
+            {
+                if (Convert.ToString(row["City"]) == city)
+                {
+                    Console.WriteLine(string.Format("\n{0},{1},{2},{3},{4},{5},{6}", row[0], row[1], row[2], row[3], row[4], row[5], row[6]));
+                }
+            }
+        }
+        public void PrintState(DataTable addressBook1)
+        {
+            Console.WriteLine("\nEnter State to Be Searched and Retrieve Rcords by Aplabetical Order of First Name");
+            string state = Console.ReadLine();
+            foreach (DataRow row in addressBook1.Rows)
+            {
+                if (Convert.ToString(row["State"]) == state)
+                {
+                    Console.WriteLine(string.Format("\n{0},{1},{2},{3},{4},{5},{6}", row[0], row[1], row[2], row[3], row[4], row[5], row[6]));
+                }
+            }
+
+        }
     }
 }
