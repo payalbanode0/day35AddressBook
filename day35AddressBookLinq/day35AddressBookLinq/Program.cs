@@ -19,6 +19,7 @@ namespace Day35AddressBookLinq
             addressBook.Columns.Add("State");
             addressBook.Columns.Add("PhoneNumber");
             addressBook.Columns.Add("Email");
+            addressBook.Columns.Add("RelationType");
             Console.WriteLine("\nAddress Book Data Table Created");
 
             //UC 3 Insert
@@ -37,7 +38,10 @@ namespace Day35AddressBookLinq
             //adb.CountCityOrState(addressBook);
 
             //UC 8 Retrieve Records of Searched City and State in Ascending order of FirstName
-            adb.NamesAlpabeticallybyGivenCityandState(addressBook);
+            //adb.NamesAlpabeticallybyGivenCityandState(addressBook);
+
+            //UC 9 add RelationType Column and Print Name and RealtionType
+            adb.FamilyandFriend(addressBook);
         }
     }
 }

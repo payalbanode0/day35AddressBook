@@ -189,5 +189,14 @@ namespace Day35AddressBookLinq
             }
 
         }
+        //UC 9 Print Name and Relation Type
+        public void FamilyandFriend(DataTable add)
+        {
+            foreach (DataRow row in add.Rows)
+            {
+                Console.WriteLine("\n{0},{1}", row[0], row[7]);
+            }
+        }
     }
 }
+   
