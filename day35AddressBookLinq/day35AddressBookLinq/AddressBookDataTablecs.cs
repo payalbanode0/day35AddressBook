@@ -9,14 +9,15 @@ namespace Day35AddressBookLinq
 {
     public class AddressBookDataTable
     {
+
         //UC 3 Insert New Contact to Address Book
         public void AddToTable(DataTable addressBook)
         {
             addressBook.TableName = "AddressBook";
             //Adding FirstName ,LastName,Address,City,State,PhoneNumber and Email.
-            addressBook.Rows.Add("Payal", "Banode", "25-4-71", "Nagpur", "Maharashtra", "8793819197", "payalabanode0@gmail.com");
-            addressBook.Rows.Add("Eren", "Jeager", "Shinsengumi", "Wall Maria", "Attak on Titan", "7958977310", "erenjeager@gmail.com");
-            addressBook.Rows.Add("Sasuke", "Uchiha", "4-3-333", "Leaf Village", "Naruto", "9106529025", "schihasasuke@gmail.com");
+            addressBook.Rows.Add("Payal", "Banode", "25-4-710", "Nagpur", "Maharashtra", "8793819197", "payalabanode0@gmail.com");
+            addressBook.Rows.Add("Eren", "Jeager", "Shinsengumi", "Kazipet", "Attak on Titan", "7958977310", "erenjeager@gmail.com");
+            addressBook.Rows.Add("Sasuke", "Uchiha", "4-3-333", "Leaf Village", "Telangana", "9106529025", "schihasasuke@gmail.com");
             addressBook.Rows.Add("Kamado", "Tanjiro", "mt Kumotori", "Okutama", "Demon Slayer", "7578977310", "kamadoTanjiro@gmail.com");
             Display(addressBook);
         }
@@ -105,7 +106,7 @@ namespace Day35AddressBookLinq
                     Console.WriteLine("person in " + city + " this city are : \n" + "First Name : " + fname + ", Last Name : " + lname + ", Address : " + address + ", City : " + city1 + ", State : " + state + ", PhoneNumeber : " + phno + ", Email : " + email);
                 }
             }
-            Console.WriteLine("\n Enter State to Search and Retrieve REcords");
+            Console.WriteLine("\n Enter State to Search and Retrieve Records");
             string state1 = Console.ReadLine();
             foreach (DataRow row1 in addressBook.Rows)
             {
@@ -122,6 +123,36 @@ namespace Day35AddressBookLinq
                 }
             }
         }
+        //UC 7 Count records based on City and State
+        public int numberOfRecordsCity, numberOfRecordsState;
+        public void CountCityOrState(DataTable addressBook)
+        {
+            Console.WriteLine("\n Enter City to Search and Retrieve Records");
+            string city = Console.ReadLine();
+            foreach (DataRow row in addressBook.Rows)
+            {
+                if (Convert.ToString(row["City"]) == city)
+                {
+                    numberOfRecordsCity = addressBook.AsEnumerable().Where(x => x["City"].ToString() == city).ToList().Count;
+
+                }
+
+            }
+            Console.WriteLine(numberOfRecordsCity);
+            Console.WriteLine("\n Enter State to Search and Retrieve Records");
+            string state = Console.ReadLine();
+            foreach (DataRow row in addressBook.Rows)
+            {
+                if (Convert.ToString(row["State"]) == state)
+                {
+                    numberOfRecordsState = addressBook.AsEnumerable().Where(x => x["State"].ToString() == state).ToList().Count;
+
+                }
+
+            }
+            Console.WriteLine(numberOfRecordsState);
+
+
+        }
     }
 }
-    

@@ -31,7 +31,11 @@ namespace Day35AddressBookLinq
             //adb.DeleteRecords(addressBook);
 
             //Uc 6 Retrieve based on City or State
-            adb.RetievebyCity(addressBook);
+            //adb.RetievebyCity(addressBook);
+
+            //Uc 7
+            adb.CountCityOrState(addressBook);
+
 
         }
     }
